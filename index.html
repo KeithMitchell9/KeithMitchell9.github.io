@@ -8,6 +8,40 @@
 </head>
 <body class="bg-white text-gray-800">
 
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Left: Hamburger -->
+        <div class="flex items-center">
+          <button id="menu-toggle" class="text-gray-700 focus:outline-none md:hidden">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <span class="ml-3 font-bold text-xl text-blue-700">Neuro11</span>
+        </div>
+  
+        <!-- Right: Search Bar -->
+        <div class="hidden md:block">
+          <input type="text"
+                 placeholder="Search..."
+                 class="border border-gray-300 rounded-lg px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+      </div>
+    </div>
+  
+    <!-- Dropdown Menu -->
+    <nav id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200 shadow">
+      <a href="our-mission.html" class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Our Mission</a>
+      <a href="meet-the-team.html" class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Meet the Team</a>
+      <a href="future-plans.html" class="block px-4 py-2 text-blue-700 hover:bg-gray-100">Future Plans</a>
+    </nav>
+  </header>
+
   <!-- Navigation -->
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,21 +70,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Mobile Menu: Dropdown with Links -->
-    <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-      <a href="our-mission.html" class="block text-blue-700 font-medium hover:underline">Our Mission</a>
-      <a href="meet-the-team.html" class="block text-blue-700 font-medium hover:underline">Meet the Team</a>
-      <a href="future-plans.html" class="block text-blue-700 font-medium hover:underline">Future Plans</a>
-    </nav>
-
-    <!-- Desktop Menu (optional horizontal nav links) -->
-    <nav class="hidden md:flex justify-center space-x-8 py-2 bg-gray-50">
-      <a href="our-mission.html" class="text-blue-700 font-medium hover:underline">Our Mission</a>
-      <a href="meet-the-team.html" class="text-blue-700 font-medium hover:underline">Meet the Team</a>
-      <a href="future-plans.html" class="text-blue-700 font-medium hover:underline">Future Plans</a>
-    </nav>
-  </header>
 
   <!-- Footer -->
   <footer class="py-6 text-center text-sm text-gray-500 bg-gray-100">
