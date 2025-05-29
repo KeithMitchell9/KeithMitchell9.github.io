@@ -1,5 +1,0 @@
-Dataset 1: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud 
-
-Dataset 2: https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset 
-
-Dataset 3: https://www.kaggle.com/datasets/gregorut/videogamesales
