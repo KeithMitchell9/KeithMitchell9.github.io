@@ -41,22 +41,26 @@
   <!-- Hero with Navigation -->
   <section class="bg-blue-600 text-white py-12 text-center relative">
     <!-- Navigation Bar -->
-    <div class="absolute top-6 left-6 flex items-center space-x-4">
-      <div class="hamburger" onclick="toggleMenu()">
-        <div class="w-6 h-0.5 bg-white mb-1 transition-all duration-300 line1"></div>
-        <div class="w-6 h-0.5 bg-white mb-1 transition-all duration-300 line2"></div>
-        <div class="w-6 h-0.5 bg-white transition-all duration-300 line3"></div>
-      </div>
-      
+    <div class="absolute top-6 left-0 right-0 px-6 flex items-center justify-between">
+      <!-- Left: Home Title -->
       <h1 class="home-title text-xl md:text-2xl font-bold" onclick="goHome()">Neuro11 Therapeutics</h1>
       
-      <!-- Dropdown Menu -->
-      <div class="dropdown-menu bg-white text-gray-800 mt-2 rounded-lg shadow-lg w-48 absolute left-0 top-12 z-50">
-        <div class="p-4">
-          <div class="space-y-3">
-            <a href="mission.html" class="block text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">Our Mission</a>
-            <a href="team.html" class="block text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">Meet the Team</a>
-            <a href="future.html" class="block text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">Future Plans</a>
+      <!-- Right: Hamburger Menu -->
+      <div class="relative">
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="w-6 h-0.5 bg-white mb-1 transition-all duration-300 line1"></div>
+          <div class="w-6 h-0.5 bg-white mb-1 transition-all duration-300 line2"></div>
+          <div class="w-6 h-0.5 bg-white transition-all duration-300 line3"></div>
+        </div>
+        
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu bg-white text-gray-800 mt-2 rounded-lg shadow-lg w-48 absolute right-0 top-12 z-50">
+          <div class="p-4">
+            <div class="space-y-3">
+              <a href="mission.html" class="block text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">Our Mission</a>
+              <a href="team.html" class="block text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">Meet the Team</a>
+              <a href="future.html" class="block text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">Future Plans</a>
+            </div>
           </div>
         </div>
       </div>
