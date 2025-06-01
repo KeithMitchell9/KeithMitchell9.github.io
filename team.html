@@ -40,6 +40,18 @@
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid #2563eb;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .team-image:hover {
+      transform: scale(1.1);
+    }
+    .team-name {
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    .team-name:hover {
+      color: #1d4ed8;
     }
   </style>
 </head>
@@ -113,22 +125,22 @@
               
               <!-- Darcy Tocci -->
               <div class="text-center max-w-sm">
-                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny1.jpg" alt="Darcy Tocci" class="team-image mx-auto mb-4">
-                <h3 class="text-xl font-bold text-blue-700 mb-2">Darcy Tocci, MBA</h3>
+                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny1.jpg" alt="Darcy Tocci" class="team-image mx-auto mb-4" onclick="showPersonDetails('darcy-tocci')">
+                <h3 class="text-xl font-bold text-blue-700 mb-2 team-name" onclick="showPersonDetails('darcy-tocci')">Darcy Tocci, MBA</h3>
                 <p class="text-lg font-semibold text-gray-600 mb-3">CEO & Co-Founder</p>
               </div>
               
               <!-- Dr. Changning Wang -->
               <div class="text-center max-w-sm">
-                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny2.jpg" alt="Dr. Changning Wang" class="team-image mx-auto mb-4">
-                <h3 class="text-xl font-bold text-blue-700 mb-2">Dr. Changning Wang</h3>
+                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny2.jpg" alt="Dr. Changning Wang" class="team-image mx-auto mb-4" onclick="showPersonDetails('changning-wang')">
+                <h3 class="text-xl font-bold text-blue-700 mb-2 team-name" onclick="showPersonDetails('changning-wang')">Dr. Changning Wang</h3>
                 <p class="text-lg font-semibold text-gray-600 mb-3">Co-Founder</p>
               </div>
               
               <!-- Dr. Martin Zhang -->
               <div class="text-center max-w-sm">
-                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny3.jpg" alt="Dr. Martin Zhang" class="team-image mx-auto mb-4">
-                <h3 class="text-xl font-bold text-blue-700 mb-2">Dr. Martin (Can) Zhang</h3>
+                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny3.jpg" alt="Dr. Martin Zhang" class="team-image mx-auto mb-4" onclick="showPersonDetails('martin-zhang')">
+                <h3 class="text-xl font-bold text-blue-700 mb-2 team-name" onclick="showPersonDetails('martin-zhang')">Dr. Martin (Can) Zhang</h3>
                 <p class="text-lg font-semibold text-gray-600 mb-3">Co-Founder</p>
               </div>
               
@@ -141,15 +153,15 @@
               
               <!-- Dr. Rudolph E. Tanzi -->
               <div class="text-center max-w-sm">
-                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny4.jpg" alt="Dr. Rudolph E. Tanzi" class="team-image mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-700 mb-2">Dr. Rudolph E. Tanzi</h3>
+                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny4.jpg" alt="Dr. Rudolph E. Tanzi" class="team-image mx-auto mb-4" onclick="showPersonDetails('rudolph-tanzi')">
+                <h3 class="text-xl font-bold text-gray-700 mb-2 team-name" onclick="showPersonDetails('rudolph-tanzi')">Dr. Rudolph E. Tanzi</h3>
                 <p class="text-lg font-semibold text-gray-600 mb-3">Scientific Advisor</p>
               </div>
               
               <!-- Dr. Yueyang Zhang -->
               <div class="text-center max-w-sm">
-                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny5.jpg" alt="Dr. Yueyang Zhang" class="team-image mx-auto mb-4">
-                <h3 class="text-xl font-bold text-gray-700 mb-2">Dr. Yueyang Zhang</h3>
+                <img src="https://raw.githubusercontent.com/KeithMitchell9/KeithMitchell9.github.io/main/images/Bunny5.jpg" alt="Dr. Yueyang Zhang" class="team-image mx-auto mb-4" onclick="showPersonDetails('yueyang-zhang')">
+                <h3 class="text-xl font-bold text-gray-700 mb-2 team-name" onclick="showPersonDetails('yueyang-zhang')">Dr. Yueyang Zhang</h3>
                 <p class="text-lg font-semibold text-gray-600 mb-3">Research Team</p>
               </div>
               
@@ -243,6 +255,11 @@
         leadershipTab.classList.remove('text-blue-600');
         leadershipTab.classList.add('text-black');
       }
+    }
+
+    function showPersonDetails(personId) {
+      // Navigate to individual team member pages
+      window.location.href = `team/${personId}.html`;
     }
 
     // Close menu when clicking outside
